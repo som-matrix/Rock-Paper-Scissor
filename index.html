@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- displays site properly based on user's device -->
+
+   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+   <link rel="stylesheet" href="style.css">
+   <title>Frontend Mentor | Rock, Paper, Scissors</title>
+   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+   <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+   </style>
+   <script defer src="script.js"></script>
+ </head>
+
+ <body>
+   <div class="rule">
+     <h1>Rules</h1>
+     <div class="rule-img">
+       <img src="/images/image-rules.svg" alt="rules" class="rules-img">
+     </div>
+     <button class="close">
+       <img src="/images/icon-close.svg" alt="close" class="close-img">
+     </button>
+   </div>
+   <div class="head">
+     <div class="logo">
+      <img src="/images/logo.svg" alt="logo" class="logo">
+     </div>
+     <div class="score-box">
+      <h2 class="Primary">Score</h2>
+      <div class="score" id="main-score">0</div>
+     </div>
+   </div>
+   <div class="main-display">
+     <button class="btn btn-paper" data-choice="paper">
+       <div class="wrapper">
+         <img src="/images/icon-paper.svg" alt="paper" class="choice-img">
+       </div>
+     </button>
+     <button class="btn btn-scissors" data-choice="scissors">
+       <div class="wrapper">
+         <img src="/images/icon-scissors.svg" alt="scissors" class="choice-img">
+       </div>
+     </button>
+     <button class="btn btn-rock" data-choice="rock">
+       <div class="wrapper">
+         <img src="/images/icon-rock.svg" alt="rock" class="choice-img">
+       </div>
+     </button>
+   </div>
+   <div class="sub-display">
+     <div class="left">
+       <h3 class="message">You Picked</h3>
+       <button class="btn btn-paper" id="user-pick">
+         <div class="wrapper">
+           <img src="/images/icon-paper.svg" alt="paper" class="choice-img">
+         </div>
+       </button>
+     </div>
+     <div class="middle">
+       <h1 class="middle-message">You win</h1>
+       <button class="play">Play Again</button>
+     </div>
+     <div class="right">
+       <h3 class="message">The house Picked</h3>
+       <button class="btn btn-rock" id="house-pick">
+         <div class="wrapper">
+            <img src="/images/icon-rock.svg" alt="rock" class="choice-img">
+         </div>
+       </button>
+     </div>
+   </div>
+   <button class="rules">Rules</button>
+ </body>
+</html>
